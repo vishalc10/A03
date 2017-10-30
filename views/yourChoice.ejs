@@ -1,0 +1,82 @@
+<% include header %>
+<div class="container-fluid">
+        <h2>Counting #Characters in a String</h2>
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-8">
+                <form>
+                    <label><b>Enter a String</b></label>
+                    <input type="text" name="message" id="user_input" class="form-control" value="Your, message here!">
+                </form>
+                <br>
+                <form>
+                <button type="button" class="btn btn-default" onclick="showInput()">Count</button><br>
+                <label>Total number of characters is: <span id='display'>_</span></label>
+                </form>
+            </div>
+            <div class="col-sm-2">
+    
+            </div>
+        </div><hr>
+        <h2>Calculate your BMI</h2>
+        <div class="row">
+                <div class="col-sm-3"></div>
+                <div class="col-sm-6">
+                    Please Enter your name here:
+                    <input type="text" name="fname" id="fname" class="form-control" value="Your Name!">
+                </div>
+                <div class="col-sm-3"></div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <label for="h1">Height - <span id="cmft">Feet</span>: </label>
+                </div>
+                <div class="col-sm-2">
+                        <input type="number" id="ht"/>
+                </div>
+                <div class="col-sm-4"></div>
+            </div><br>
+            <div id="inch" class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <label for="h2">Inches: </label>
+                </div>
+                <div class="col-sm-2">
+                    <input type="number" id="in"/>
+                </div>
+                <div class="col-sm-4"></div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                        <label for="w">Weight - <span id="kglbs">Pounds</span>: </label>
+                </div>
+                <div class="col-sm-2">
+                    <input type="number" id="wt"/>
+                </div>
+                <div class="col-sm-4"></div>
+            </div><br>
+            <div class="row">
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">
+                    <input checked type="radio" name="u" id="imp" value="i"/><label for="u2">Imperial</label>
+                    <input type="radio" name="u" id="met" value="m"/><label for="u1">Metric</label>
+                </div>
+                <div class="col-sm-2">
+                    <button type="button" class="btn btn-default" id="calBmi">Calculate BMI</button><br>
+                </div>
+                <div class="col-sm-4"></div>
+            </div>
+            <div class="row">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-2">
+                        <label for="u1" id="bmiR">Hello <span id="usn"></span>, your BMI is: <span id="bmidisplay">_</span></label>
+                    </div>
+                    <div class="col-sm-2">
+                        <label for="bmiCategory" id="bmiCat"></label>
+                    </div>
+                    <div class="col-sm-4"></div>
+                </div>
+    </div>
+    <% include footer %>
