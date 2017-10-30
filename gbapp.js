@@ -22,6 +22,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get("/", function (request, response) {
   response.render("index");
 });
+app.get("/index", function (request, response) {
+  response.render("index");
+});
 app.get("/about", function (request, response) {
   response.render("index");
 });
@@ -49,7 +52,7 @@ app.post("/new-entry", function (request, response) {
     content: request.body.body,
     published: new Date()
   });
-  response.redirect("/");  // where to go next? Let's go to the home page :)
+  response.redirect("/guestbook");  // where to go next? Let's go to the home page :)
 });
 
 // if we get a 404 status, render our 404.ejs view
